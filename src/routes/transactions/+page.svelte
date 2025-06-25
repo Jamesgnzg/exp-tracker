@@ -15,7 +15,7 @@
     </div>
     <div class="p-2 md:w-2/5">
         <div class="flex max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm">
-            <img class="w-15 h-15 rounded-full mr-4" alt="Avatar">
+            <img class="w-15 h-15 rounded-full mr-4" src="https://randomuser.me/api/portraits/med/men/75.jpg" alt="Avatar">
             <div class="text-md">
                 <p>Jonathan Kuminga</p>
                 <p>Shooting Guard</p>
