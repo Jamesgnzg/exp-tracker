@@ -1,3 +1,13 @@
+{#snippet Categories(/** @type {string} */ name, /** @type {number} */ value)}
+    <div class="flex max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm">
+        <img class="w-15 h-15 rounded-full mr-4" src="https://randomuser.me/api/portraits/med/men/75.jpg" alt="Avatar">
+        <div class="text-md">
+            <p>{name}</p>
+            <p>{`$${value}`}</p>
+        </div>
+    </div>
+{/snippet}
+
 <div class="flex flex-col md:flex-row">
     <div class="p-2 md:w-4/5">
         <form class="max-w-md mx-auto">   
@@ -15,20 +25,8 @@
         <div class="md:mt-8">
             <p>Categories</p>
             <div class="flex p-5 gap-3">
-                <div class="flex max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm">
-                    <img class="w-15 h-15 rounded-full mr-4" src="https://randomuser.me/api/portraits/med/men/75.jpg" alt="Avatar">
-                    <div class="text-md">
-                        <p>Jonathan Kuminga</p>
-                        <p>Shooting Guard</p>
-                    </div>
-                </div>
-                <div class="flex max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm">
-                    <img class="w-15 h-15 rounded-full mr-4" src="https://randomuser.me/api/portraits/med/men/75.jpg" alt="Avatar">
-                    <div class="text-md">
-                        <p>Jonathan Kuminga</p>
-                        <p>Shooting Guard</p>
-                    </div>
-                </div>
+                {@render Categories("Public Transpo", 1500)}
+                {@render Categories("Food", 5000)}
             </div>
         </div>
     </div>
