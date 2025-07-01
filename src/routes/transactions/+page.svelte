@@ -9,7 +9,7 @@
 {/snippet}
 
 <div class="flex flex-col md:flex-row">
-    <div class="p-2 md:w-4/5">
+    <div class="md:w-4/5">
         <div class="md:flex">
             <form class="md:w-full">   
                 <label for="default-search" class="absolute mb-2 text-sm font-medium text-gray-900 sr-only">Search</label>
@@ -30,17 +30,19 @@
         <div class="md:mt-8">
             <p>Categories</p>
             <div class="flex p-5 gap-3">
-                {@render Categories("Public Transposssssssssssstsssxxxxaaa", 15000)}
+                {@render Categories("Public Transportation", 15000)}
                 {@render Categories("Food", 5000)}
             </div>
         </div>
     </div>
-    <div class="p-2 md:w-2/5">
-        <div class="flex max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm">
-            <img class="w-15 h-15 rounded-full mr-4" src="https://randomuser.me/api/portraits/med/men/75.jpg" alt="Avatar">
-            <div class="text-md">
-                <p>Jonathan Kuminga</p>
-                <p>Shooting Guard</p>
+    <div class="md:w-1.5/5">
+        <div class="p-3 :m-auto w-80">
+            <div class="flex flex-col items-center max-w-xs p-4 bg-white border border-gray-200 rounded-lg shadow-sm">
+                <img class="w-15 h-15 rounded-full mr-4" src="https://randomuser.me/api/portraits/med/men/75.jpg" alt="Avatar">
+                <div class="text-md mt-2">
+                    <p>Jonathan Kuminga</p>
+                    <p>Shooting Guard</p>
+                </div>
             </div>
         </div>
     </div>
