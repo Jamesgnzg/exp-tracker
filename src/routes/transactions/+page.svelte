@@ -22,12 +22,11 @@
                     <input type="search" id="default-search" class="block w-full p-4 ps-10 text-sm text-gray-900 border-b-2 border-0 border-gray-200 transition duration-300 delay-200 ease focus:outline-none focus:ring-0 focus:border-yellow-300 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" autocomplete="off" placeholder="Search"/>
                 </div>
             </form>
-            <a class="md:py-4 md:px-2" href="/notifications">Notifications</a>
-            <a class="md:py-4 md:px-2" href="/transactions">Transactions</a>
+            <a class="hidden md:inline md:py-4 md:px-2" href="/notifications">Notifications</a>
+            <a class="hidden md:inline md:py-4 md:px-2" href="/transactions">Transactions</a>
         </div>
         
-
-        <div class="md:mt-8">
+        <div class="mt-4 md:mt-5">
             <p>Categories</p>
             <div class="flex p-5 gap-3">
                 {@render Categories("Public Transportation", 15000)}
@@ -36,7 +35,7 @@
         </div>
     </div>
     <div class="md:w-1.5/5">
-        <div class="p-3 :m-auto w-80">
+        <div class="p-3 m-auto w-80">
             <div class="flex flex-col items-center max-w-xs p-4 bg-white border border-gray-200 rounded-lg shadow-sm">
                 <img class="w-15 h-15 rounded-full mr-4" src="https://randomuser.me/api/portraits/med/men/75.jpg" alt="Avatar">
                 <div class="text-md mt-2">
