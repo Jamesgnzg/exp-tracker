@@ -3,7 +3,7 @@
         <img class="w-15 h-15 rounded-full mr-4" src="https://randomuser.me/api/portraits/med/men/75.jpg" alt="Avatar">
         <div class="text-md overflow-hidden">
             <p class="truncate">{name}</p>
-            <p class="truncate">{`$${value}`}</p>
+            <p class="truncate mt-1">{`${new Intl.NumberFormat("en-US", { style: "currency", currency: "USD" }).format(value)}`}</p>
         </div>
     </div>
 {/snippet}
