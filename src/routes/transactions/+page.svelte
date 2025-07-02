@@ -1,6 +1,10 @@
+<script>
+    const { data } = $props();
+</script>
+
 {#snippet Categories(/** @type {string} */ name, /** @type {number} */ value)}
     <div class="flex min-w-xs p-6 bg-white border border-gray-200 rounded-lg shadow-sm">
-        <img class="w-15 h-15 rounded-full mr-4" src="https://randomuser.me/api/portraits/med/men/75.jpg" alt="Avatar">
+        <img class="w-15 h-15 rounded-full mr-4" src="https://randomuser.me/api/portraits/med/women/21.jpg" alt="Avatar">
         <div class="text-md overflow-hidden">
             <p class="truncate" title={name}>{name}</p>
             <p class="truncate mt-1">{`${new Intl.NumberFormat("en-US", { style: "currency", currency: "USD" }).format(value)}`}</p>
@@ -28,14 +32,15 @@
         
         <div class="mt-4 md:mt-5">
             <p>Categories</p>
-            <div class="flex p-5 gap-3">
-                {@render Categories("Public Transportation", 15000)}
-                {@render Categories("Food", 5000)}
+            <div class="flex p-5 gap-3 overflow-hidden">
+                {#each data.categoriesList as { name, totalAmount}  }
+                    {@render Categories(name, totalAmount)}
+                {/each}
             </div>
         </div>
     </div>
-    <div class="md:w-1.5/5">
-        <div class="p-3 m-auto w-80">
+    <div class="md:w-2/5">
+        <div class="p-3">
             <div class="flex flex-col items-center max-w-xs p-4 bg-white border border-gray-200 rounded-lg shadow-sm">
                 <img class="w-15 h-15 rounded-full mr-4" src="https://randomuser.me/api/portraits/med/men/75.jpg" alt="Avatar">
                 <div class="text-md mt-2">

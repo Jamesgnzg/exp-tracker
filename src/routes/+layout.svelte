@@ -82,6 +82,6 @@
 	</div>
  </aside>
  
- <main class="p-4 md:py-4 md:ps-4 sm:ml-64">
+ <main class="p-4 md:py-4 md:ps-4 md:pr-0 sm:ml-64">
 	{@render children()}
  </main>
