@@ -1,5 +1,5 @@
 <script>
-  import Accordion from '$lib/Accordion.svelte';
+    import Accordion from '$lib/Accordion.svelte';
 
     const { data } = $props();
 </script>
