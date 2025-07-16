@@ -1,4 +1,6 @@
 <script>
+  import Accordion from '$lib/Accordion.svelte';
+
     const { data } = $props();
 </script>
 
@@ -35,6 +37,22 @@
             <div class="flex p-5 gap-3 overflow-hidden">
                 {#each data.categoriesList as { name, totalAmount}  }
                     {@render Categories(name, totalAmount)}
+                {/each}
+            </div>
+        </div>
+        <div class="mt-3 md:mt-5">
+            <p>Transactions</p>
+            <div class="flex flex-col gap-5 scroll-auto p-5">
+                {#each data.transactionsList as {transactionName, amount}}
+                    <Accordion>
+                        <div slot="header">
+                            <p class="font-semibold">{transactionName}</p>
+                            <p class="truncate mt-1">{`${new Intl.NumberFormat("en-US", { style: "currency", currency: "USD" }).format(amount)}`}</p>
+                        </div>
+                        <div slot="details">
+                            <p>These are the details.</p>
+                        </div>
+                    </Accordion>
                 {/each}
             </div>
         </div>
