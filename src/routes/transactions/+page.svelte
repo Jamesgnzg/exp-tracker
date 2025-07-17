@@ -45,10 +45,8 @@
             <div class="flex flex-col gap-5 scroll-auto p-5">
                 {#each data.transactionsList as {transactionName, amount}}
                     <Accordion>
-                        <div slot="header">
-                            <p class="font-semibold">{transactionName}</p>
-                            <p class="truncate mt-1">{`${new Intl.NumberFormat("en-US", { style: "currency", currency: "USD" }).format(amount)}`}</p>
-                        </div>
+                        <p class="font-semibold" slot="name">{transactionName}</p>
+                        <span class="truncate" slot="price">{`${new Intl.NumberFormat("en-US", { style: "currency", currency: "USD" }).format(amount)}`}</span>
                         <div slot="details">
                             <p>These are the details.</p>
                         </div>
