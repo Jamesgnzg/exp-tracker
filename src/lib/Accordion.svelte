@@ -17,7 +17,7 @@
 			<slot name="price">
 				<span>$0</span>
 			</slot>
-			<button on:click={handleClick}>
+			<button class="cursor-pointer" on:click={handleClick}>
 				{#if open}
 					<ChevronUp />
 				{:else}

@@ -17,12 +17,12 @@ export const userDataList = {
     {
       transactionName: "Internet",
       category: "Bills",
-      amount: 3000,
+      amount: 49.58,
     },
     {
       transactionName: "Water",
       category: "Bills",
-      amount: 2000,
+      amount: 68.86,
     },
     {
       transactionName: "Electricity",
