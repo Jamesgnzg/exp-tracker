@@ -15,7 +15,7 @@
 {/snippet}
 
 <div class="flex flex-col md:flex-row">
-    <div class="md:w-4/5">
+    <div class="md:w-3/4">
         <div class="md:flex">
             <form class="md:w-full">   
                 <label for="default-search" class="absolute mb-2 text-sm font-medium text-gray-900 sr-only">Search</label>
@@ -55,7 +55,7 @@
             </div>
         </div>
     </div>
-    <div class="md:w-2/5">
+    <div class="md:w-1/4">
         <div class="p-3">
             <div class="flex flex-col items-center max-w-xs p-4 bg-white border border-gray-200 rounded-lg shadow-sm">
                 <img class="w-15 h-15 rounded-full mr-4" src="https://randomuser.me/api/portraits/med/men/75.jpg" alt="Avatar">
