@@ -6,7 +6,7 @@
     const handleClick = () => open = !open
 </script>
 
-<div class="p-5 bg-white border border-gray-200 rounded-lg shadow-sm">
+<div class="p-5 bg-white border border-transparent border-b-gray-200 rounded-lg shadow-sm">
 	<div class="flex justify-between w-full">
 		<div class="mr-5">
 			<slot name="name">

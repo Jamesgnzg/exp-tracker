@@ -31,15 +31,15 @@
 </div>
 
 <div class="mt-4 md:mt-5">
-    <p>Categories</p>
+    <p class="font-semibold">Categories</p>
     <div class="flex p-5 gap-3 overflow-hidden">
-        {#each categoriesList as { name, totalAmount}  }
+        {#each categoriesList as {name, totalAmount}  }
             {@render Categories(name, totalAmount)}
         {/each}
     </div>
 </div>
 <div class="mt-3 md:mt-5">
-    <p>Transactions</p>
+    <p class="font-semibold">Transactions</p>
     <div class="flex flex-col gap-5 scroll-auto p-5">
         {#each transactionsList as {transactionName, amount}}
             <Accordion>
