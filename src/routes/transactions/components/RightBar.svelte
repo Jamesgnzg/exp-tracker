@@ -6,4 +6,5 @@
             <p>Shooting Guard</p>
         </div>
     </div>
+    <button class="mt-5 p-3 rounded-lg text-white bg-red-400 cursor-pointer min-w-full">+ Add Transaction</button>
 </div>
