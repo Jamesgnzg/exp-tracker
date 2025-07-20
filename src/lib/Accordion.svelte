@@ -29,6 +29,7 @@
 	{#if open}
         <div class="mt-3 p-2 bg-[#cecece]" transition:slide>
             <slot name="details">
+				<p>No available details</p>
             </slot>
         </div>
 	{/if}
