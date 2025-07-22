@@ -1,5 +1,6 @@
 <script>
   import { fade } from "svelte/transition";
+  import { cubicInOut } from "svelte/easing";
   import { X } from '@lucide/svelte';
 
     let { showModal = $bindable(false), header, children } = $props();
@@ -8,10 +9,13 @@
     $effect(() => {
         if (showModal) {
             dialog.showModal();
-        } else {
-            dialog.close();
         }
     })
+
+    const closeModal = () => {
+        showModal = false
+    }
+
 </script>
 
 <dialog bind:this={dialog}
@@ -20,11 +24,11 @@
     >
 
     {#if showModal}
-        <div class="p-5" transition:fade>
+        <div class="p-5" transition:fade={{ duration: 400, easing: cubicInOut }} onoutroend={() => dialog.close()}>
             <div class="flex justify-between border-b border-b-gray-200 pb-3">
                 {@render header?.()}
                 <!-- svelte-ignore a11y_autofocus -->
-                <button autofocus onclick={() => dialog.close()} class="cursor-pointer text-gray-500 hover:bg-gray-200 rounded-lg p-1.5"><X /></button>
+                <button autofocus onclick={() => closeModal()} class="cursor-pointer text-gray-500 hover:bg-gray-200 rounded-lg p-1.5"><X /></button>
             </div>
             {@render children?.()}
         </div>
