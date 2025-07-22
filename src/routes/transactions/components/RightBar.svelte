@@ -1,5 +1,6 @@
 <script lang="ts">
     import Modal from "$lib/Modal.svelte";
+    
     let showTransactionModal = $state(false);
 </script>
 <div class="p-3">
@@ -10,6 +11,7 @@
             <p>Shooting Guard</p>
         </div>
     </div>
+    
     <button class="mt-5 p-3 rounded-lg text-white bg-red-400 cursor-pointer min-w-full" onclick={() => showTransactionModal = true}>+ Add Transaction</button>
 </div>
 
