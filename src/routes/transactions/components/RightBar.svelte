@@ -13,7 +13,7 @@
         </div>
     </div>
     
-    <button class="mt-5 p-3 rounded-lg text-white bg-red-400 cursor-pointer min-w-full" onclick={() => showTransactionModal = true}>
+    <button class="mt-5 p-3 rounded-lg text-white bg-red-500 cursor-pointer min-w-full hover:bg-red-700" onclick={() => showTransactionModal = true}>
         <div class="flex gap-2 justify-center">
             <CirclePlus />
             <span>Add Transaction</span>
