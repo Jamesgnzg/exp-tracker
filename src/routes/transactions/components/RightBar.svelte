@@ -1,5 +1,6 @@
 <script lang="ts">
     import Modal from "$lib/Modal.svelte";
+    import { CirclePlus } from '@lucide/svelte';
     
     let showTransactionModal = $state(false);
 </script>
@@ -12,7 +13,12 @@
         </div>
     </div>
     
-    <button class="mt-5 p-3 rounded-lg text-white bg-red-400 cursor-pointer min-w-full" onclick={() => showTransactionModal = true}>+ Add Transaction</button>
+    <button class="mt-5 p-3 rounded-lg text-white bg-red-400 cursor-pointer min-w-full" onclick={() => showTransactionModal = true}>
+        <div class="flex gap-2 justify-center">
+            <CirclePlus />
+            <span>Add Transaction</span>
+        </div>
+    </button>
 </div>
 
 <Modal bind:showModal={showTransactionModal}>
@@ -58,7 +64,7 @@
                     Cancel
                 </button>
                 <button type="submit" class="text-white inline-flex items-center bg-orange-700 hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mt-4 cursor-pointer">
-                    Add new Transaction
+                    Add Transaction
                 </button>
             </div>
         </form>
