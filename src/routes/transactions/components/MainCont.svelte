@@ -14,7 +14,7 @@
     </div>
 {/snippet}
 
-<div class="md:flex">
+<div class="hidden md:flex">
     <form class="md:w-full">   
         <label for="default-search" class="absolute mb-2 text-sm font-medium text-gray-900 sr-only">Search</label>
         <div class="relative">
