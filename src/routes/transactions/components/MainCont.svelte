@@ -26,8 +26,8 @@
             <input type="search" id="default-search" class="block w-full p-4 ps-10 text-sm text-gray-900 border-b-2 border-0 border-gray-200 transition duration-300 delay-200 ease focus:outline-none focus:ring-0 focus:border-yellow-300 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" autocomplete="off" placeholder="Search"/>
         </div>
     </form>
-    <a class="hidden md:inline md:py-4 md:px-2" href="/notifications">Notifications</a>
-    <a class="hidden md:inline md:py-4 md:px-2" href="/transactions">Transactions</a>
+    <a class="hidden md:inline md:py-4 md:px-2 hover:text-blue-500" href="/notifications">Notifications</a>
+    <a class="hidden md:inline md:py-4 md:px-2 hover:text-blue-500" href="/transactions">Transactions</a>
 </div>
 
 <div class="mt-4 md:mt-5">
