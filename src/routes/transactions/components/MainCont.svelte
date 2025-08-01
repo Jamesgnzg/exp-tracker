@@ -5,7 +5,7 @@
 </script>
 
 {#snippet Categories(/** @type {string} */ name, /** @type {number} */ value)}
-    <div class="flex min-w-xs p-6 bg-white border border-gray-200 rounded-lg shadow-sm">
+    <div class="flex p-6 bg-white border border-gray-200 rounded-lg shadow-sm">
         <img class="w-15 h-15 rounded-full mr-4" src="https://randomuser.me/api/portraits/med/women/21.jpg" alt="Avatar">
         <div class="text-md overflow-hidden">
             <p class="truncate" title={name}>{name}</p>
@@ -32,7 +32,7 @@
 
 <div class="mt-4 md:mt-5">
     <p class="font-semibold">Categories</p>
-    <div class="flex p-5 gap-3 overflow-hidden">
+    <div class="grid grid-cols-2 p-5 gap-3 overflow-hidden">
         {#each categoriesList as {name, totalAmount}  }
             {@render Categories(name, totalAmount)}
         {/each}

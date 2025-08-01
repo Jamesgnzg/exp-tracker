@@ -6,11 +6,15 @@ export const userDataList = {
     },
     {
       name: "Food",
-      totalAmount: 10000,
+      totalAmount: 12405,
     },
     {
       name: "Bills",
       totalAmount: 20000,
+    },
+    {
+      name: "Hobbies",
+      totalAmount: 3500,
     },
   ],
   transactionsList: [
